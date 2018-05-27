@@ -22,9 +22,13 @@ class HashMap<K, V> {
     }
 
 
-    public int getSize() { return size; }
+    public int getSize() {
+        return size;
+    }
 
-    public boolean isEmpty() { return this.getSize() == 0; }
+    public boolean isEmpty() {
+        return this.getSize() == 0;
+    }
 
     // gets hash code from key and generates index of our array list
     private int getBucketIndex(K key) {
@@ -85,7 +89,7 @@ class HashMap<K, V> {
         // if the addition put us over the load factor,
         // we double the size of the ArrayList and rearrange our nodes
 
-        if ( (1.0 * size) >= loadFactor ) {
+        if ((1.0 * size) >= loadFactor) {
             ArrayList<HashNode<K, V>> temp = bucketArray;
             bucketArray = new ArrayList();
 
@@ -109,6 +113,8 @@ class HashMap<K, V> {
         }
     }
 
+    public void remove(K key) {
 
+    }
 }
 
