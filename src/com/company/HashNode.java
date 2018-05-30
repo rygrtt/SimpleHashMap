@@ -7,7 +7,7 @@ class HashNode<K, V> {
     private K key;
     private V value;
 
-    HashNode<K, V> next;
+    HashNode<K, V> next = null;
 
     public HashNode(K key, V value) {
         this.key = key;
@@ -30,7 +30,6 @@ class HashNode<K, V> {
     public void setValue(V value) {
         this.value = value;
     }
-
 
     public HashNode<K, V> getNext() {
         return next;
